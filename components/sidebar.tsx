@@ -58,7 +58,7 @@ const Sidebar = () => {
             Voting
           </li>
           <li
-            onClick={() => navigateTo("/voting")}
+            onClick={() => navigateTo("/reward_automate")}
             className="text-white flex items-center gap-3 cursor-pointer hover:text-gray-300"
           >
             <Users size={20} />

@@ -108,12 +108,16 @@ const Home = () => {
         .then((result) => {
           console.log("Transaction Successful:", result);
           setTransactionComplete(true); // Show checkmark popup
+          
+          setLoadingProgress(100);
           setTimeout(() => {
             setTransactionComplete(false); // Hide popup after 3 seconds
+
           }, 3000);
         })
         .catch((error) => {
           console.error("Transaction Failed:", error);
+          setLoadingProgress(0);
         });
     } catch (error) {
       console.error("Error in handleTrading:", error);
@@ -259,7 +263,7 @@ const Home = () => {
               exit={{ opacity: 0, scale: 0.9 }}
               className="mb-8 p-6 bg-white/10 rounded-xl backdrop-blur-sm"
             >
-              <h2 className="text-2xl mb-4">Trading in Progress</h2>
+              <h2 className="text-2xl mb-4">Your Trading </h2>
               <div className="flex flex-col md:flex-row items-center justify-center gap-6">
                 <motion.div
                   className="text-center"
@@ -289,10 +293,7 @@ const Home = () => {
                   transition={{ duration: 0.5 }}
                 />
               </div>
-              <div className="mt-4 flex items-center justify-center gap-2">
-                <Loader2 className="animate-spin" />
-                <p className="text-yellow-400">Processing trade... {loadingProgress}%</p>
-              </div>
+              {transactionComplete && (<div>Back to Market</div>)}
             </motion.div>
           )}
         </AnimatePresence>
