@@ -202,7 +202,7 @@ export default function EsportsComparison() {
     setLoadingProgress(0);
 
     try {
-      sendETH("0xFFcf8FDEE72ac11b5c542428B35EEF5769C409f0", accId.toString())
+      sendETH("0xd03ea8624C8C5987235048901fB614fDcA89b117", accId.toString())
         .then((result) => {
           console.log("Transaction Successful:", result);
           setTransactionComplete(true);

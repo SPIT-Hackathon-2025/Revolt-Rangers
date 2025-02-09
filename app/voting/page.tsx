@@ -2,6 +2,7 @@
 
 import { useState } from "react"
 import { Vote ,Star} from "lucide-react";
+import PolicyProposals from "./PolicyProposals";
 
 export default function Voting() {
   const [tournaments, setTournaments] = useState([
@@ -48,6 +49,7 @@ export default function Voting() {
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-slate-900 via-purple-900 to-slate-900 p-8">
+      <PolicyProposals />
       <div className="max-w-4xl mx-auto">
         <h1 className="text-4xl font-bold mb-8 text-white flex items-center gap-3">
           <Vote className="text-purple-400" />
