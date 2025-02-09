@@ -29,25 +29,3 @@ EspeonX is a blockchain-powered esports and digital asset marketplace that ensur
 2. **Player Achieves Milestone** - Unlocks incentives.
 3. **Rewards Transferred** - Verified players receive rewards.
 
-## Tech Stack
-- Blockchain & Smart Contracts
-- Web3 Integration
-- NFTs & Cryptographic Hashing
-
-## Getting Started
-1. Clone the repo:
-   ```
-   git clone https://github.com/your-repo/espeonx.git
-   ```
-2. Install dependencies:
-   ```
-   npm install
-   ```
-3. Run the app:
-   ```
-   npm start
-   ```
-
-## License
-Licensed under the **MIT License**.
-
