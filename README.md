@@ -2,6 +2,16 @@
 
 # EspeonX: Decentralized Esports & Digital Asset Marketplace
 
+## Steps to run
+
+**Need UBUNTU 22.04 or higher**
+Commands:
+`npm install -g ganache`
+
+`npm i` OR `npm i --legacy-peer-deps` 
+
+`npm run dev -- -p 3001`
+
 ## Overview
 EspeonX is a blockchain-powered esports and digital asset marketplace that ensures fair competition, transparent rewards, and seamless trading of in-game assets.
 
